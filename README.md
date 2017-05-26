@@ -1,45 +1,9 @@
 # Storybook UI Options Addon
 
-The Options addon can be used to set configure the Storybook UI. This addon works with both [React Storybook](https://github.com/kadirahq/react-storybook) and [React Native Storybook](https://github.com/kadirahq/react-native-storybook).
+This contents of this repo was moved to the [Storybook monorepo](https://github.com/storybooks/storybook/) and the NPM package name has been changed.
 
---- 
+- The old name of the package was: **@kadira/storybook-addon-options**
+- The new name of the package is: **@storybook/addon-options**
+- The location of the code is: https://github.com/storybooks/storybook/tree/master/addons/options
 
-**This repo has been deprecated because it's now included in https://github.com/storybooks/storybook**
-
----
-
-![](docs/screenshot.png)
-
-## Getting Started
-
-First, install the addon
-
-```shell
-npm install -D @kadira/storybook-addon-options
-```
-
-Add this line to your `addons.js` file (create this file inside your storybook config directory if needed).
-
-```js
-import '@kadira/storybook-addon-options/register';
-```
-
-Import and use the `setOptions` function in your config.js file.
-
-```js
-import * as storybook from '@kadira/storybook';
-import { setOptions } from '@kadira/storybook-addon-options';
-
-setOptions({
-  name: 'CUSTOM-OPTIONS',
-  url: 'https://github.com/kadirahq/storybook-addon-options',
-  goFullScreen: false,
-  showLeftPanel: false,
-  showDownPanel: false,
-  showSearchBox: false,
-  downPanelInRight: false,
-  sortStoriesByKind: false,
-});
-
-storybook.configure(() => require('./stories'), module);
-```
+The repo you're looking at now is out of date and no longer maintained.
